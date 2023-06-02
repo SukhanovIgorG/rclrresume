@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  padding-top: 31px;
+  padding-right: 41px;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.general {
+  padding: 40px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo__container {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  margin-bottom: -20px;
+}
+
+.photo {
+  width: 322px;
+}
+
+.glasses {
+  height: 86px;
+  position: absolute;
+  top: 124px;
+  left: 83px;
+  rotate: 5deg;
+}
+
+.contacts {
+  z-index: 1;
+  padding: 40px 24px;
+  clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');
+
+  background-color: #f51b1b;
+  border-radius: 24px 24px 0px 0px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contacts__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  letter-spacing: -0.02em;
+}
+
+.contacts__info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: -0.02em;
+}
+.contacts__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contacts__list_item {
+  margin: 0;
+  padding: 0;
+  height: 18px;
+}
+
+.contacts__list_logo {
+  height: 19px;
+  width: 19px;
+  padding-right: 11px;
+}
+
+.info {
+  padding: 58px 41px 40px 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  padding: 0 316px 33px 0;
+}
+
+.carrier {
+  padding: 47px;
+
+  flex-grow: 3;
+  border: solid 1px rgba(255, 255, 255, 0.4);
+}
+
+.carrier-item {
+  display: flex;
+  border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+  padding: 12px 0;
+}
+.carrier-item:last-child {
+  border-bottom: none;
+}
+
+.carrier-header {
+  min-width: 200px;
+}
+
+.description {
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-header {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  letter-spacing: -0.01em;
+}
+
+.description-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  letter-spacing: -0.01em;
+  opacity: 0.4;
+  padding-bottom: 8px;
+}
